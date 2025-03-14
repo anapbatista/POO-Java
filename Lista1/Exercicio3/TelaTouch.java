@@ -1,4 +1,3 @@
-package Lista1.Exercicio3.src;
 
 
 public class TelaTouch {

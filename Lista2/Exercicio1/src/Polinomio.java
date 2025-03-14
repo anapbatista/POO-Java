@@ -1,4 +1,3 @@
-package Lista2.Exercicio1.src;
 
 public class Polinomio {
 
