@@ -11,8 +11,8 @@ public class Main {
 
         poli.Add(t0);
         poli.Add(t1);
-        poli.Add(t3);
         poli.Add(t2);
+        poli.Add(t3);
 
         System.out.print("Polinômio: ");
         poli.Mostra();
