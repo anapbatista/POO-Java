@@ -1,3 +1,5 @@
+package Lista1.Exercicio1.src;
+
 public class Produto {
 
     private String nome;

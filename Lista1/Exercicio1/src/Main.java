@@ -1,3 +1,5 @@
+package Lista1.Exercicio1.src;
+
 public class Main {
 
  //No método main, instanciar um objeto Produto, exibir suas informações e testar a adição e remoção de estoque
