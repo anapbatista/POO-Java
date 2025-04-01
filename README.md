@@ -14,13 +14,13 @@ Este repositório contém implementações de exercícios, listas e projetos des
 ## 📁 Estrutura do Repositório
 ```bash
 POO-Java/
-│── **Projetos/**
-│   ├── **Lista1/**
-│   │   ├── **Exercicio1/**
+│── Projetos/
+│   ├── Lista1/
+│   │   ├── Exercicio1/
 │   │   │     ├── src/
 │   │   │     ├── README.md
 │   │   │     ├── ...
-│   │   ├── **Exercicio2/**
+│   │   ├── Exercicio2/
 │   │   │     ├── src/
 │   │   │     ├── README.md
 │   │   │     ├── ...
