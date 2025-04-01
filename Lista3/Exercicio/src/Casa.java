@@ -9,7 +9,7 @@ public class Casa extends Moradia {
 
 
     public void exibirDadosMoradia(){
-        System.out.println("Dono: " + getDono());
+        System.out.println("Dono: " + getDono().getNome());
         System.out.println("Tipo: " + getTipo());
         System.out.println("Número de quartos: " + getNumQuartos());
         System.out.println("Tem vaga de garagem: " + isTemVagaDeGaragem());

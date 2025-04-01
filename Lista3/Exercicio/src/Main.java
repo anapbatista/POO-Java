@@ -54,7 +54,10 @@ public class Main {
 
         Predio predio1 = new Predio("Royal", 2);
         Apartamento apto01 = new Apartamento("Apto", 2, false, 0);
+        Pessoa p5 = new Pessoa("Vitor", 28, 'M');
+        apto01.setMorador(p5);
         predio1.getPredio()[0] = apto01;
+
         predio1.getPredio()[0].exibirDadosMoradia();
 
         System.out.println(predio1.getPredio()[0].calculoCustosTotais() );
