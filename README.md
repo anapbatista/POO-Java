@@ -15,14 +15,15 @@ Este repositório contém implementações de exercícios, listas e projetos des
 ```bash
 POO-Java/
 │── Projetos/
-│   ├── Exercicio1-L1/
-│   │   ├── src/
-│   │   ├── README.md
-│   │   ├── ...
-│   ├── Exercicio2-L1/
-│   │   ├── src/
-│   │   ├── README.md
-│   │   ├── ...
+│   ├── Lista1/
+│   │   ├── Exercicio1/
+│   │   |     ├── src
+│   │   |     ├── README.md
+│   │   |     ├── ...
+│   |   ├── Exercicio2/
+│   │   |     ├── src/
+|   |   │     ├── README.md
+|   |   │     ├── ...
 │
 └── README.md
 ```
