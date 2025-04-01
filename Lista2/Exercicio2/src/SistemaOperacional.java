@@ -58,4 +58,15 @@ public class SistemaOperacional {
         System.out.println("Ligado!");
         this.status = true;
     }
+
+    public void desligaSO() {
+        this.status = false;
+        System.out.println("Desligado.");
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    
 }
