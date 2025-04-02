@@ -11,12 +11,10 @@ public abstract class Moradia {
         this.temVagaDeGaragem = temVagaDeGaragem;
     }
 
-    public void setMorador(Pessoa aPessoa) {
-        {
-            this.dono = aPessoa;
-        }
-
+    public boolean isTemVagaDeGaragem() {
+        return temVagaDeGaragem;
     }
+
 
 
     public String getTipo() {
@@ -27,10 +25,16 @@ public abstract class Moradia {
         return numQuartos;
     }
 
-    public Pessoa getDono() {
-        return dono;
+    public String getDono() {
+        return dono.getNome();
     }
 
+    public void setMorador(Pessoa aPessoa) {
+        {
+            this.dono = aPessoa;
+        }
+
+    }
 
     // métodos de implementação concreta
 
@@ -44,11 +48,6 @@ public abstract class Moradia {
 
     }
 
-    
-
-    public boolean isTemVagaDeGaragem() {
-        return temVagaDeGaragem;
-    }
 
     public void comprarVagaDeGaragem() {
         if (!isTemVagaDeGaragem()) {

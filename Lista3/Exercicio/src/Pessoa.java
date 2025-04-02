@@ -26,8 +26,9 @@ public class Pessoa {
         return sexo;
     }
 
-    public void aniversario(){
+    public boolean fezAniversario(){
         setIdade(++idade);
+        return true;
     }
 
     public void exibirDados(){

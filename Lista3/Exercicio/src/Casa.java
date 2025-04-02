@@ -8,8 +8,10 @@ public class Casa extends Moradia {
     }
 
 
+    @Override
+
     public void exibirDadosMoradia(){
-        System.out.println("Dono: " + getDono().getNome());
+        System.out.println("Dono: " + getDono());
         System.out.println("Tipo: " + getTipo());
         System.out.println("Número de quartos: " + getNumQuartos());
         System.out.println("Tem vaga de garagem: " + isTemVagaDeGaragem());
@@ -19,8 +21,6 @@ public class Casa extends Moradia {
 
     }
 
-
-    @Override
     public float calculoCustosTotais() {
         return 2000.0f;
     }

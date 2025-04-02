@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 public class Predio {
 
     private String nomePredio;
@@ -7,13 +10,33 @@ public class Predio {
     private static final int MAX = 10;
 
     public Predio(String nomePredio, int numAptos) {
+        Scanner scanner = new Scanner(System.in);
         this.nomePredio = nomePredio;
 
         if (numAptos >= MIN && numAptos <= MAX) {  // Verificando se o número de apartamentos está dentro do limite
             this.aptos = new Apartamento[numAptos];
+
+            for (int i = 0; i < numAptos; i++) {
+                
+                System.out.println("\nInforme os dados do Apartamento " + (i + 1) + ":");
+
+                System.out.print("Número de quartos: ");
+                int numQuartos = scanner.nextInt();
+
+                System.out.print("O apartamento tem vaga de garagem? (true/false): ");
+                boolean temVagaDeGaragem = scanner.nextBoolean();
+
+                System.out.print("Andar do apartamento: ");
+                int andar = scanner.nextInt();
+
+                this.aptos[i] = new Apartamento("Apto" , numQuartos, temVagaDeGaragem, andar);
+                System.out.println(" ");
+            }
         } else {
             System.out.println("O número de apartamentos deve estar entre " + MIN + " e " + MAX);
         }
+        scanner.close();
+
     }
 
     public String getNomePredio() {

@@ -11,11 +11,11 @@ public class Main {
         p1.exibirDados();
         p2.exibirDados();
 
-        p1.aniversario();
+        p1.fezAniversario();
         System.out.println(
                 p1.getNome() + " , parabéns pelo seu aniversário! Agora, você tem: " + p1.getIdade() + " anos");
         System.out.println(" ");
-        p2.aniversario();
+        p2.fezAniversario();
         System.out.println(
                 p2.getNome() + " , parabéns pelo seu aniversário! Agora, você tem: " + p2.getIdade() + " anos");
         System.out.println(" ");
@@ -53,11 +53,10 @@ public class Main {
         System.out.println(" ");
 
         Predio predio1 = new Predio("Royal", 2);
-        Apartamento apto01 = new Apartamento("Apto", 2, false, 0);
+        
         Pessoa p5 = new Pessoa("Vitor", 28, 'M');
-        apto01.setMorador(p5);
-        predio1.getPredio()[0] = apto01;
-
+        
+        predio1.getPredio()[0].setMorador(p5);
         predio1.getPredio()[0].exibirDadosMoradia();
 
         System.out.println(predio1.getPredio()[0].calculoCustosTotais() );
