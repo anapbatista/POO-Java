@@ -12,4 +12,11 @@ public abstract class Documento {
     public abstract boolean abrir();
     public abstract void formatar();
 
+    public String toString() {
+        return "Documento {" +
+               "Título='" + titulo + '\'' +
+               ", Autor='" + autor + '\'' +
+               '}';
+    }
+
 }

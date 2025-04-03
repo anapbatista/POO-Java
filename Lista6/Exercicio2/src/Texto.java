@@ -12,12 +12,12 @@ public class Texto extends Documento{
 
     @Override
     public boolean abrir(){
-        System.out.println("Abrindo o texto...");
+        System.out.println("Abrindo o texto...\n");
         return true;
     }
 
     public void formatar(){
-        System.out.println("Formatando o texto...");
+        System.out.println("Formatando o texto...\n");
     }
 
 
