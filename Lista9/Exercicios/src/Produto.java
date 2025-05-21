@@ -1,4 +1,5 @@
 package Exercicios.src;
+
 import java.util.*;
 
 public class Produto {
@@ -38,7 +39,15 @@ public class Produto {
     }
 
     public static void ordenarPorPopularidade(List<Produto> lista) {
-        lista.sort(Comparator.comparingInt(Produto::getPopularidade).reversed()); // mais popular primeiro
+        Comparator<Produto> comparadorPorPopularidade = new Comparator<Produto>() {
+            @Override
+            public int compare(Produto p1, Produto p2) {
+                // Comparando de forma decrescente (mais popular primeiro)
+                return Integer.compare(p2.getPopularidade(), p1.getPopularidade());
+            }
+        };
+
+        lista.sort(comparadorPorPopularidade);
     }
 
     public static void main(String[] args) {
@@ -49,15 +58,20 @@ public class Produto {
 
         System.out.println("\nOrdenado por descrição:");
         ordenarPorDescricao(produtos);
-        produtos.forEach(System.out::println);
+        for (Produto p : produtos) {
+            System.out.println(p);
+        }
 
         System.out.println("\nOrdenado por preço:");
         ordenarPorPreco(produtos);
-        produtos.forEach(System.out::println);
+        for (Produto p : produtos) {
+            System.out.println(p);
+        }
 
         System.out.println("\nOrdenado por popularidade:");
         ordenarPorPopularidade(produtos);
-        produtos.forEach(System.out::println);
+        for (Produto p : produtos) {
+            System.out.println(p);
+        }
     }
 }
-
