@@ -12,7 +12,7 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public int getId() {
+    public int getid() {
         return id;
     }
 
@@ -58,7 +58,7 @@ public class Produto {
         System.out.println("Reposição realizada com sucesso!\n");
     }
 
-    public String tostring(){
+    public String toString(){
         return "ID: " + id + "\nNome: " + nome + "\nPreço: "+
         String.format("%.2f", preco) + "\nQuantidade: " + quantidade;
 

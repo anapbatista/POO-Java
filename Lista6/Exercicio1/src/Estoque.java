@@ -1,6 +1,3 @@
-
-
-
 public class Estoque {
 
     private Produto[] produtos;
@@ -35,7 +32,7 @@ public class Estoque {
 
     public boolean removerProdutoPorId(int id) {
         for (int i = 0; i < produtos.length; i++) {
-            if (produtos[i] != null && produtos[i].getId() == id) {
+            if (produtos[i] != null && produtos[i].getid() == id) {
                 produtos[i] = null;
                 System.out.println("Produto removido com sucesso!");
                 return true;
@@ -48,7 +45,7 @@ public class Estoque {
     public void tostring() {
         for (int i = 0; i < produtos.length; i++) {
             if (produtos[i] != null) {
-                System.out.println(produtos[i].tostring());
+                System.out.println(produtos[i].toString());
                 System.out.println(" ");
 
             }

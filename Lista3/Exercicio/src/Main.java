@@ -1,4 +1,4 @@
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
 
         Moradia[] vet = new Moradia[4];
@@ -64,4 +64,4 @@ public class Main {
 
     }
 
-}
+}*/

@@ -1,6 +1,6 @@
 
 
-public class Main {
+/*public class Main {
 
  //No método main, instanciar um objeto Produto, exibir suas informações e testar a adição e remoção de estoque
  public static void main(String[] args) {
@@ -16,4 +16,4 @@ public class Main {
     produto.removerEstoque(200);
     System.out.println("Quantidade após remover estoque: " + produto.getQuantidadeEmEstoque());
     }
-}
+}*/
