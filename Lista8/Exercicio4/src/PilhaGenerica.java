@@ -1,14 +1,14 @@
-public class PilhaGenerica<T extends Comparable<T>> {
+public class PilhaGenerica<T> {
 
     private int topo;
     private int tamanho;
     private T[] pilha;
 
-    @SuppressWarnings("unchecked")
+
     public PilhaGenerica(int tamanho) {
         this.tamanho = tamanho;
         this.topo = -1;
-        this.pilha = (T[]) new Comparable[tamanho]; // casting necessário
+        this.pilha = (T[]) new Object[tamanho];
     }
 
     // verifica se a pilha ta vazia
