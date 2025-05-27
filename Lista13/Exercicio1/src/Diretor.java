@@ -1,7 +1,7 @@
 public class Diretor extends Aprovador {
 
-    public Diretor(){
-        super(null);
+    public Diretor(Aprovador prox){
+        super(prox);
         
     }
 

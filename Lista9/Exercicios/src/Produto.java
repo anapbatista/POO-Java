@@ -31,11 +31,27 @@ public class Produto {
     }
 
     public static void ordenarPorDescricao(List<Produto> lista) {
-        lista.sort(Comparator.comparing(Produto::getDescricao));
+        Comparator<Produto> comparadorPorDescricao = new Comparator<Produto>() {
+            @Override
+            public int compare(Produto p1, Produto p2) {
+                // Comparando de forma decrescente (mais popular primeiro)
+                return p1.getDescricao().compareTo(p2.getDescricao());
+            }
+        };
+
+        lista.sort(comparadorPorDescricao);
     }
 
     public static void ordenarPorPreco(List<Produto> lista) {
-        lista.sort(Comparator.comparingDouble(Produto::getPreco));
+        Comparator<Produto> comparadorPorPreco = new Comparator<Produto>() {
+            @Override
+            public int compare(Produto p1, Produto p2) {
+                // Comparando de forma decrescente (mais popular primeiro)
+                return Float.compare(p2.getPreco(), p1.getPreco());
+            }
+        };
+
+        lista.sort(comparadorPorPreco);
     }
 
     public static void ordenarPorPopularidade(List<Produto> lista) {

@@ -3,7 +3,7 @@ package Exercicios.src;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
-public class ArraySet <E extends Comparable<E>> extends ArrayList<E> {
+public class ArraySet <E> extends ArrayList<E> {
 
     private TreeSet<E> conjuntoOrdenado = new TreeSet<>();
 
