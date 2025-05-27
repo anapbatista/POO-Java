@@ -6,7 +6,7 @@ public class Main {
 
         VetorR3 vetor = new VetorR3(v1, v2);
 
-        Calcula soma = new Soma();
+        Calcula soma = (Calcula) new Soma();
         Calcula produtoEsc = new ProdutoEscalar();
         Calcula produtoVet = new ProdutoVetorial();
 

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> v1 = new ArrayList<>();
         ArrayList<Integer> v2 = new ArrayList<>();

@@ -1,7 +1,7 @@
 public class CalculadoraFacade {
 
     public static double calcular(String operador, double a, double b) {
-        Operacao op = OperacaoFactory.criarOperacao(operador);
+        Operacao op = (Operacao) OperacaoFactory.criarOperacao(operador);
         return op.calcular(a, b);
 
     }
